@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 60rem;
+    margin: auto;
+}
+
+.titulo h1{
+    font-family: 'Bungee Shade', Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    text-align: center;
+    color: #ec4b38;
+}
+
+.img-calculadora{
+    display:flex;
+    justify-content: center;
+}
+
+.dados-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+
+.input{
+   display: flex;
+   justify-content: center;
+}
+
+input {
+    background: #f0543f;
+    padding: .3rem;
+    color: #fff;
+    width: 4rem;
+    font-size: 1.5rem;
+    border: 0;
+    box-shadow: 2px 2px 2px #d81a17;
+    border-radius: .3rem;
+    margin-bottom: 1.5rem;
+}
+
+label{
+    color: #f0543f;
+    font-weight: bold;
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+
+#cronometro p{
+    font-family: 'Bungee Shade', Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+    line-height: 2.2rem;
+    color: #e23127;
+    text-align: center;
+}
+
+.btn{
+    background: #f0543f;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: 0;
+    padding: 1rem;
+    border-radius: .8rem;
+    margin:.3rem;
+    box-shadow: 3px 3px 0px #d71816;
+    cursor: pointer;
+}
+
+.d-none{
+    display: none;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-stop{
+    display: none;
+}
+
+.alerta-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 10rem;
+    padding: 1rem 3rem;
+    background: #fe8a29;
+    background: linear-gradient(75deg, rgb(251, 110, 76) 0%, rgb(240, 81, 33) 55%, rgb(215, 24, 22) 100%);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 2px #d71816;
+    transform: translate(-50%, 0);
+}
+
+.alerta-box h3{
+    color: #f7f7f8;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.alerta-box-hidden{
+    display: none;
+}
+
+.alerta-box-show{
+    display: block;
+}
+
+.alerta-close{
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: red;
+    padding: .4rem 0.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+

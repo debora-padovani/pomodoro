@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto:wght@400;700&display=swap');
+body{
+    font-size: 16px;
+}
 
 * {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', Arial, sans-serif;
 }
 img{
     max-width: 100%;
@@ -13,68 +15,96 @@ img{
 }
 
 .titulo h1{
-    font-family: 'Bungee Shade', Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
     line-height: 3.2rem;
     text-align: center;
     color: #ec4b38;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.bloco-tempo{
+    display: flex;
 }
 
 .img-calculadora{
     display:flex;
-    justify-content: center;
+    width: 40%;
 }
 
 .dados-container{
     display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
+    align-items: center;
+    width: 70%;
 }
 
 
 .input{
-   display: flex;
-   justify-content: center;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 input {
-    background: #f0543f;
-    padding: .3rem;
-    color: #fff;
-    width: 4rem;
     font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    background: #fff;
+    /*olor: #f0543f;*/
+    padding: .3rem;
+    width: 3rem;
     border: 0;
-    box-shadow: 2px 2px 2px #d81a17;
     border-radius: .3rem;
-    margin-bottom: 1.5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
 }
 
 label{
-    color: #f0543f;
-    font-weight: bold;
-    margin-right: 2rem;
-    font-size: 2rem;
+    /*color: #f0543f;*/
+    font-weight: 400;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.input p{
+    display: inline;
+    margin: 0;
+    margin-left: 1rem;
+    /*color: #f0543f;*/
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 #cronometro p{
-    font-family: 'Bungee Shade', Helvetica, Arial, sans-serif;
-    font-size: 6rem;
-    line-height: 2.2rem;
+    font-size: 4rem;
+    line-height: 2;
     color: #e23127;
+    font-weight: 700;
+    letter-spacing: 2px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .btn{
     background: #f0543f;
     color: #fff;
     font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
     text-transform: uppercase;
     border: 0;
-    padding: 1rem;
     border-radius: .8rem;
-    margin:.3rem;
-    box-shadow: 3px 3px 0px #d71816;
+    padding: .5rem 1rem;
+    margin: .3rem;
     cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.btn:hover{
+    opacity: .6;
 }
 
 .d-none{
@@ -94,20 +124,22 @@ label{
     position: fixed;
     top: 50%;
     left: 50%;
-    max-width: 10rem;
-    padding: 1rem 3rem;
+    padding: 6rem 8rem;
     background: #fe8a29;
-    background: linear-gradient(75deg, rgb(251, 110, 76) 0%, rgb(240, 81, 33) 55%, rgb(215, 24, 22) 100%);
+    background: linear-gradient(75deg, rgb(249, 249, 249) 0%, rgb(255, 238, 238) 55%, rgb(230, 225, 225) 100%);
     border-radius: 1rem;
-    box-shadow: 2px 2px 2px 2px #d71816;
-    transform: translate(-50%, 0);
+    box-shadow: 2px 2px 2px 2px #d7181614;
+    transform: translate(-50%, -50%);
 }
 
 .alerta-box h3{
-    color: #f7f7f8;
-    font-size: 1.4rem;
+    color: #f0543f;
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: italic;
     letter-spacing: 1px;
     text-align: center;
+    width: 100%;
 }
 
 .alerta-box-hidden{
@@ -132,3 +164,25 @@ label{
 
 }
 
+@media (max-width: 992px){
+    .container{
+        display: grid;
+        height: 100vh;
+    }
+    .bloco-tempo {
+        display: block;
+    }
+    .img-calculadora {
+        width: 100%;
+        justify-content: center;
+    }
+    .dados-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        font-size: 10px;
+    }
+}

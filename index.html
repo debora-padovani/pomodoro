@@ -8,6 +8,8 @@
     <title>Calculadora de Pomodoro</title>
 
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
     
 </head>
 
@@ -17,34 +19,35 @@
         <div class="titulo">
             <h1>Calculadora de Pomodoro</h1>
         </div>
-        <div class="img-calculadora">
-            <img src="calculadora.png">
-        </div>
 
-        <div class="dados-container">
-            <form>
-                <div class="input">
-                    <label for="worktime">Tempo de trabalho em minutos</label>
-                    <input type="number" id="worktime" value="25">
-                </div>
-                <div class="input">
-                    <label for="resttime">Tempo de descanso em minutos</label>
-                    <input type="number" id="resttime" value="5">
-                </div>
-                <!--<div class="input">
-                    <button type="send" class="btn">Iniciar</button>
-                </div>-->
-            </form>
-        </div>
+        <div class="bloco-tempo">
+            <div class="img-calculadora">
+                <img src="calculadora.png">
+            </div>
+    
+            <div class="dados-container">
+                <form>
+                    <div class="input">
+                        <label for="worktime">Trabalho:</label>
+                        <input type="number" id="worktime" value="25"> <p>minutos</p>
+                    </div>
+                    <div class="input">
+                        <label for="resttime">Descanso:</label>
+                        <input type="number" id="resttime" value="5"> <p>minutos</p>
+                    </div>
+                </form>
+            </div>
+        </div>        
+        
     
         <div class="cronometro-container">
+            <div id="cronometro">
+                <p>00:00:00</p>
+            </div>
             <div class="botoes">
                 <button class="btn btn-start" id="working">Iniciar trabalho</button>
                 <button class="btn btn-start" id="break">Iniciar intervalo</button>
                 <button class="btn btn-stop" id="stop">Parar</button>
-            </div>
-            <div id="cronometro">
-                <p></p>
             </div>
         </div>
 
